@@ -1,0 +1,7 @@
+from sklearn.datasets import load_iris
+iris_dataset = load_iris()
+The iris object that is returned by load_iris is a Bunch object, which is very similar
+to a dictionary. It contains keys and values:
+14 | Chapter 1: Introduction
+In[11]:
+print("Keys of iris_dataset: \n{}".format(iris_dataset.keys()))
