@@ -9,3 +9,5 @@ data_pandas = pd.DataFrame(data)
 # IPython.display allows "pretty printing" of dataframes
 # in the Jupyter notebook
 display(data_pandas)
+
+
