@@ -1,0 +1,16 @@
+In[29]:
+y_pred = knn.predict(X_test)
+print("Test set predictions:\n {}".format(y_pred))
+Out[29]:
+Test set predictions:
+ [2 1 0 2 0 2 0 1 1 1 2 1 1 1 1 0 1 1 0 0 2 1 0 0 2 0 0 1 1 0 2 1 0 2 2 1 0 2]
+In[30]:
+print("Test set score: {:.2f}".format(np.mean(y_pred == y_test)))
+Out[30]:
+Test set score: 0.97
+We can also use the score method of the knn object, which will compute the test set
+accuracy for us:
+In[31]:
+print("Test set score: {:.2f}".format(knn.score(X_test, y_test)))
+Out[31]:
+Test set score: 0.97
